@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	function desconto(quantidade, totalDeProdutos) {
+		return desconto / (quantidade * totalDeProdutos);
+	}
+
+	var nome = prompt("Informe o nome do produto.");
+	var quantidade = prompt(nome + ", Informe a quantidade de produtos.")
+	var preco = 100;
+	var totalDeProdutos = prompt(nome + ", total De Produtos");
+	var desconto;
+	
+	mostra("total " + totalDeProdutos);
+
+	var totalDeProdutos = desconto(quantidade, totalDeProdutos);
+
+	mostra(nome + ", a sua compra: " + desconto);
+
+	if(desconto <18.5) {
+		mostra("Você está abaixo do recomendado.");
+	}
+
+	if(desconto >35) {
+		mostra("Você está acima do recomendado.")
+	}
+
+	if(desconto >= 18.5 && desconto <= 35) {
+		
+			mostra("Seu desconto está excelente.");
+		
+	}
+
+
+</script>

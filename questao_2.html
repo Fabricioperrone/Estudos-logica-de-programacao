@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function descontoProduto(quantidade, valorTotal) {
+		return valorTotal / (quantidade * quantidade);
+
+	}
+	
+	var nome = prompt("Informe o nome do produto.");
+	var quantidade = prompt(nome + ", Informe a quantidade de produtos.");
+	var valorTotal = prompt(valorTotal +", Insira o valor total");
+
+	var desconto = descontoProduto(quantidade, valorTotal);
+
+	mostra(nome + ", o valor eh " + desconto);
+
+	if(quantidade <10) {
+		mostra("nao");
+	}
+	if(quantidade <=11) {
+		mostra("sim");
+	}
+	if(quantidade <=20) {
+		mostra("sim");
+	}
+	if(quantidade <=50) {
+		mostra("sim");
+	}
+	if(quantidade >50) {
+		mostra("sim");
+	}
+	mostra("fim")
+		
+	
+
+</script>
